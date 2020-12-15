@@ -7,6 +7,7 @@
     <tr>
       <th>Title</th>
       <th>Message</th>
+      <th>Name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= lime.title %></td>
         <td><%= lime.message %></td>
+        <td><%= lime.name %><td>
         <td><%= link_to 'Show', lime %></td>
         <td><%= link_to 'Edit', edit_lime_path(lime) %></td>
         <td><%= link_to 'Destroy', lime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
