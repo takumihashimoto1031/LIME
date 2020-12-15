@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Limes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @limes.each do |lime| %>
+      <tr>
+        <td><%= lime.title %></td>
+        <td><%= lime.message %></td>
+        <td><%= link_to 'Show', lime %></td>
+        <td><%= link_to 'Edit', edit_lime_path(lime) %></td>
+        <td><%= link_to 'Destroy', lime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lime', new_lime_path %>

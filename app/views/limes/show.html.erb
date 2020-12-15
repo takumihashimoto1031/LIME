@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @lime.title %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @lime.message %>
+</p>
+
+<%= link_to 'Edit', edit_lime_path(@lime) %> |
+<%= link_to 'Back', limes_path %>
